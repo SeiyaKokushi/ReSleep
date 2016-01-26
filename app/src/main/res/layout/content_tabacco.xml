@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kakudalab.kokushiseiya.resleep.TabaccoActivity"
+    tools:showIn="@layout/activity_tabacco"
+    android:orientation="vertical"
+    android:background="#5edc5a">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tabacco_top_icon"
+            android:elevation="4dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"></LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recommend"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="・タバコに含まれるニコチンには比較的強い覚醒作用があるため、喫煙によって不眠が引き起こされる可能性があります。\n・喫煙本数が多いほど不眠の割合が高いとされており、喫煙には寝つきを悪くするだけでなく、睡眠の質を悪化させる影響があります。\n・喫煙により摂取されたニコチンは約1時間程度作用するため、就床1時間前の喫煙や睡眠の途中で目が覚めた際の喫煙は避けましょう。\n・タバコは睡眠だけでなく、その他の様々な問題も引き起こすため、禁煙することが一番です。"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kakudalab.kokushiseiya.resleep">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".ReSleepApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/resleep_icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".WakeTimeActivity" />
+        <activity
+            android:name=".BandService$DialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name=".AlertDialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CurrentUserStateActivity" />
+        <activity android:name=".GoToSleepActivity" />
+        <activity android:name=".StanfordActivity" />
+        <activity android:name=".WakeupActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".AgeSetActivity" />
+        <activity android:name=".NameSetActivity" />
+        <activity android:name=".SexSetActivity" />
+        <activity android:name=".SleepTimeSetActivity" />
+        <activity android:name=".WakeTimeSetActivity" />
+
+        <service
+            android:name=".BandService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":bandServiceProcess" />
+        <service
+            android:name=".BandHelperService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":bandHelperServiceProcess" />
+
+        <receiver
+            android:name=".ProcessNotExistReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:process=":processNotExistReceiverProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".NotificationReceiver"
+            android:process=":notificationReceiverProcess" />
+        <receiver
+            android:name=".DateChangedReceiver"
+            android:process=":dateChangedReceiverProcess">
+            <intent-filter>
+                <action android:name="com.kakudalab.kokushiseiya.resleep.action.DATE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".EatActivity"
+            android:label="@string/title_activity_eat"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".BathActivity"
+            android:label="@string/title_activity_bath"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".CafeActivity"
+            android:label="@string/title_activity_cafe"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".AlcoholActivity"
+            android:label="@string/title_activity_alcohol"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".TabaccoActivity"
+            android:label="@string/title_activity_tabacco"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".NapActivity"
+            android:label="@string/title_activity_nap"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".ChooseActionActivity"
+            android:label="@string/title_activity_choose_action"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".CantSleepActivity"
+            android:label="@string/title_activity_cant_sleep"
+            android:theme="@style/MyTheme"></activity>
+    </application>
+
+</manifest>

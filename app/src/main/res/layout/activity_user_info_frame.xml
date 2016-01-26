@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:rowCount="20"
+    android:columnCount="5"
+    tools:context=".UserInfoFrame"
+    android:id="@+id/userInfoFrame"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nameText"
+                android:hint="Name?"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameText"
+                android:layout_alignLeft="@+id/nameText"
+                android:layout_alignStart="@+id/nameText"
+                android:layout_marginTop="31dp"
+                android:layout_alignRight="@+id/nameText"
+                android:layout_alignEnd="@+id/nameText"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:id="@+id/maleRadioButton"
+                    android:checked="false"
+                    android:clickable="true" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:id="@+id/femaleRadioButton"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:layout_marginLeft="120dp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/oldText"
+                android:hint="How Old?"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/enterButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

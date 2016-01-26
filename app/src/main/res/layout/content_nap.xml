@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kakudalab.kokushiseiya.resleep.NapActivity"
+    tools:showIn="@layout/activity_nap"
+    android:orientation="vertical"
+    android:background="#a7a3bc">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/nap_top_icon"
+            android:elevation="4dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"></LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recommend"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="・夜間に必要な睡眠時間を確保できなかった場合には、昼間の仮眠が、その後の覚醒レベルをあげ、作業能率の改善を図ることに役立つ可能性があります。\n・必要以上に長く寝すぎると目覚めの悪さが生じるため、30分以内の仮眠が望ましいとされています。\n・15時以降の仮眠は避けましょう。"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

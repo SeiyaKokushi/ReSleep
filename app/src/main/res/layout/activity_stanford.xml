@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="日中の眠気を\n自己評価してください"
+        android:id="@+id/textView7"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:id="@+id/stanfordRadiogroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="やる気があり、活発で、\n頭が冴えていて、眠くない感じ"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高とは言えないまでも、\n頭の働きが活発、集中していられる"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="くつろいで起きている、\nしかしどちらかというと少し頭がぼんやりし\n反応が悪い"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="少しぼんやりしていて、\n何かしたいと思わない"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ぼんやりしている、集中していられない、\n起きているのが困難"
+            android:id="@+id/radioButton5"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="眠いので横になりたい、ぼーっとしている"
+            android:id="@+id/radioButton6"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="まどろんでいる、起きていられない、\nすぐに眠ってしまいそう"
+            android:id="@+id/radioButton7"
+            android:checked="false"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="おやすみなさい"
+            android:id="@+id/button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@drawable/exercise_nav_icon"
+            android:title="運動" />
+        <item
+            android:id="@+id/nav_eat"
+            android:icon="@drawable/eat_nav_icon"
+            android:title="食事" />
+        <item
+            android:id="@+id/nav_cafe"
+            android:icon="@drawable/cafe_nav_icon"
+            android:title="カフェイン" />
+        <item
+            android:id="@+id/nav_alcohol"
+            android:icon="@drawable/alcohol_nav_icon"
+            android:title="アルコール" />
+        <item
+            android:id="@+id/nav_tabacco"
+            android:icon="@drawable/tabacco_nav_icon"
+            android:title="タバコ" />
+        <item
+            android:id="@+id/nav_nap"
+            android:icon="@drawable/nap_nav_icon"
+            android:title="仮眠" />
+        <item
+            android:id="@+id/nav_bath"
+            android:icon="@drawable/bath_nav_icon"
+            android:title="お風呂" />
+
+        <item
+            android:id="@+id/nav_sleep"
+            android:icon="@drawable/sleep_nav_icon"
+            android:title="睡眠" />
+    </group>
+
+</menu>

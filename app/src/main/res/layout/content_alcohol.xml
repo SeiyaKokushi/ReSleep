@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kakudalab.kokushiseiya.resleep.AlcoholActivity"
+    tools:showIn="@layout/activity_alcohol"
+    android:orientation="vertical"
+    android:background="#7676BC">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alcohol_top_icon"
+            android:elevation="4dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"></LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recommend"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="・飲酒は短期的に眠気を強くすることが示されていますが、長期的には飲酒が睡眠を質・量ともに悪化させることもわかっています。\n・いびきや睡眠時無呼吸が気になる人は、飲酒にも注意することが必要です。\n・最低でも就寝4〜6時間前の飲酒は避けましょう。"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

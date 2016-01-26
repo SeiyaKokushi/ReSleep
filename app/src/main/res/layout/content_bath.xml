@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kakudalab.kokushiseiya.resleep.BathActivity"
+    tools:showIn="@layout/activity_bath"
+    android:orientation="vertical"
+    android:background="#528ed1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bath_top_icon"
+            android:elevation="4dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"></LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recommend"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="・適切な時刻に40℃程度の高すぎない湯温で入浴するのであれば、精神的なリラックス効果に加え、湯に浸かって軽く体温をあげることで末梢血管が膨張して、その後の放熱が活発になり、寝付いてから90分後における深い睡眠を増加させる効果があります。\n・就寝直前に42℃以上のこう温浴を行うと、体温を上昇させすぎて心身を目覚めさせてしまうので、かえって入眠が妨げられることがあります。\n・就寝0.5〜6時間前の入浴による体温変化は、入眠の促進や深い睡眠の増加といった睡眠の改善効果を持ちます。"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
